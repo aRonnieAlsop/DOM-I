@@ -39,4 +39,51 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+const anchors = document.querySelectorAll('a')
+anchors[0].textContent = "Services"
+anchors[1].textContent = "Product"
+anchors[2].textContent = "Vision"
+anchors[3].textContent = "Features"
+anchors[4].textContent = "About"
+anchors[5].textContent = "Contact"
+anchors.forEach(item => {
+  item.classList.toggle('italic')
+})
+
+const image = document.querySelector('#logo-img')
+image.setAttribute('src', "http://localhost:9000/img/logo.png")
+
+const ctaTitle = document.querySelector('.cta-text h1')
+ctaTitle.textContent = "DOM Is Awesome"
+const ctaButton = document.querySelector('.cta-text button')
+ctaButton.textContent = "Get Started"
+
+const imageTwo = document.querySelector('#cta-img')
+imageTwo.setAttribute('src', "http://localhost:9000/img/cta.png")
+
+const contentTitle = document.querySelector('.text-content h4')
+contentTitle.textContent = "Features"
+const contentText = document.querySelector('.text-content p')
+contentText.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const midImage = document.querySelector('#middle-img')
+midImage.setAttribute('src', 'http://localhost:9000/img/accent.png')
+
+const bottomTitle = document.querySelectorAll('.bottom-content .text-content h4')
+const bottomText = document.querySelectorAll('.bottom-content .text-content p')
+bottomTitle[0].textContent = "Services"
+bottomTitle[1].textContent = "Product"
+bottomTitle[2].textContent = "Vision"
+bottomText[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+bottomText[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis"
+bottomText[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+document.querySelector('.contact h4').textContent = "Contact"
+const address = document.querySelectorAll('.contact p') 
+address[0].textContent = "123 Way 456 Street Somewhere, USA"
+address[1].textContent = "1 (888) 888-8888"
+address[2].textContent = "sales@greatidea.io"
+
+document.querySelector('footer a').classList.toggle('bold')
+document.querySelector('footer a').textContent = "Copyright Great Idea! 2021"
 console.log('project wired!')
