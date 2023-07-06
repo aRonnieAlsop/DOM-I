@@ -39,7 +39,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-const anchors = document.querySelectorAll('a')
+const anchors = document.querySelectorAll('.container a')
 anchors[0].textContent = "Services"
 anchors[1].textContent = "Product"
 anchors[2].textContent = "Vision"
